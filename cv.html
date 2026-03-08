@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Javier Omar Cruz - CV (Neon Terminal Edition)</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap");
+
+      :root {
+        --bg: #050b18;
+        --bg-soft: #0c1527;
+        --card: #071327;
+        --ink: #e8edf7;
+        --muted: #9aa4bc;
+        --line: #1c2740;
+        --green: #22c55e;
+        --cyan: #22d3ee;
+        --amber: #fbbf24;
+        --violet: #a78bfa;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        color: var(--ink);
+        font-family: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        background: var(--bg);
+        display: grid;
+        place-items: center;
+        padding: 20px;
+      }
+
+      .paper {
+        width: min(1080px, 96vw);
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        overflow: hidden;
+        background: var(--card);
+        box-shadow:
+          0 30px 70px rgba(0, 0, 0, 0.45),
+          0 0 0 1px rgba(34, 211, 238, 0.12),
+          inset 0 1px 0 rgba(255, 255, 255, 0.06);
+      }
+
+      .topbar {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 16px;
+        border-bottom: 1px solid var(--line);
+        background: #0d1a32;
+      }
+
+      .dot {
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+      }
+
+      .dot.red { background: #f87171; }
+      .dot.yellow { background: var(--amber); }
+      .dot.green { background: var(--green); }
+
+      .prompt {
+        margin-left: 8px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .prompt .cmd {
+        color: var(--green);
+      }
+
+      .title {
+        padding: 18px 20px 8px;
+        border-bottom: 1px solid var(--line);
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(22px, 2.1vw, 30px);
+        color: #ffffff;
+        letter-spacing: 0.02em;
+      }
+
+      .subtitle {
+        margin-top: 8px;
+        color: var(--cyan);
+        font-weight: 700;
+        font-size: 14px;
+      }
+
+      .meta {
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 12px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 270px minmax(0, 1fr);
+        gap: 0;
+      }
+
+      .left,
+      .right {
+        padding: 18px 16px 20px;
+      }
+
+      .left {
+        border-right: 1px solid var(--line);
+        background: #07101f;
+      }
+
+      .section {
+        margin-bottom: 16px;
+      }
+
+      .cmd-head {
+        color: var(--green);
+        font-size: 12px;
+        margin-bottom: 8px;
+      }
+
+      .cmd-head span {
+        color: var(--muted);
+      }
+
+      p,
+      li {
+        margin: 0 0 8px;
+        font-size: 12.6px;
+        line-height: 1.45;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 17px;
+      }
+
+      .chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .chip {
+        border: 1px solid var(--line);
+        background: rgba(34, 211, 238, 0.07);
+        color: #d9f6ff;
+        padding: 4px 8px;
+        border-radius: 999px;
+        font-size: 11px;
+      }
+
+      .chip.green {
+        background: rgba(34, 197, 94, 0.08);
+        color: #c8ffe0;
+      }
+
+      .chip.violet {
+        background: rgba(167, 139, 250, 0.1);
+        color: #e8dcff;
+      }
+
+      .timeline {
+        position: relative;
+        margin-left: 8px;
+      }
+
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 7px;
+        top: 4px;
+        bottom: 8px;
+        width: 1px;
+        background: linear-gradient(to bottom, var(--cyan), rgba(34, 211, 238, 0.06));
+      }
+
+      .job {
+        position: relative;
+        margin-bottom: 14px;
+        padding-left: 24px;
+      }
+
+      .job::before {
+        content: "";
+        position: absolute;
+        left: 2px;
+        top: 5px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #47e8ff;
+        border: 1px solid #0ea5c7;
+      }
+
+      .job::after {
+        content: "";
+        position: absolute;
+        left: -1px;
+        top: 2px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 1px solid rgba(71, 232, 255, 0.28);
+      }
+
+      .job h3 {
+        margin: 0;
+        font-size: 13.2px;
+        color: #fff;
+      }
+
+      .job .when {
+        color: var(--amber);
+        font-size: 11.5px;
+        margin: 3px 0 6px;
+      }
+
+      .split {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .terminal-line {
+        display: flex;
+        align-items: baseline;
+        gap: 6px;
+        font-size: 12px;
+        color: var(--muted);
+      }
+
+      .terminal-line b {
+        color: var(--green);
+      }
+
+      .footer {
+        border-top: 1px solid var(--line);
+        padding: 10px 16px;
+        color: var(--muted);
+        font-size: 11px;
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      @media print {
+        body {
+          background: var(--bg);
+          padding: 0;
+        }
+        .paper {
+          width: 210mm;
+          min-height: 297mm;
+          border-radius: 0;
+          box-shadow: none;
+          border: 1px solid #1b253d;
+        }
+        .grid {
+          grid-template-columns: 270px minmax(0, 1fr);
+        }
+        @page {
+          size: A4;
+          margin: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <article class="paper">
+      <div class="topbar">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <div class="prompt"><span class="cmd">omar@portfolio</span>:~/resume$ ./render --theme neon-terminal</div>
+      </div>
+
+      <header class="title">
+        <h1>Javier Omar Cruz Vargas</h1>
+        <div class="subtitle">FULL-STACK ENGINEER · Product Builder · Engineering Leader</div>
+        <div class="meta">Guadalajara, Mexico · ocruzvar@gmail.com · 15+ years building production software</div>
+      </header>
+
+      <section class="grid">
+        <aside class="left">
+          <section class="section">
+            <div class="cmd-head">$ <span>whoami</span></div>
+            <p>Full-Stack Engineer with founder DNA. I build reliable products end-to-end: architecture, implementation, infrastructure, and team execution.</p>
+          </section>
+
+          <section class="section">
+            <div class="cmd-head">$ <span>core_strengths --list</span></div>
+            <ul>
+              <li>0→1 product execution and scaling</li>
+              <li>Frontend + backend + DevOps ownership</li>
+              <li>Engineering hiring and team leadership</li>
+              <li>High-velocity shipping with quality guardrails</li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <div class="cmd-head">$ <span>tooling --ai</span></div>
+            <div class="chips">
+              <span class="chip green">Claude Code</span>
+              <span class="chip green">Codex</span>
+              <span class="chip green">Gemini CLI</span>
+              <span class="chip green">OpenClaw</span>
+              <span class="chip green">OpenRouter</span>
+              <span class="chip violet">TanStack Start</span>
+              <span class="chip violet">TanStack AI</span>
+              <span class="chip">MCP servers</span>
+              <span class="chip">AI skills</span>
+              <span class="chip">Real-world AI integration</span>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="cmd-head">$ <span>stack --top</span></div>
+            <div class="chips">
+              <span class="chip">JavaScript</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Vue.js</span>
+              <span class="chip">React</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">Fastify</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">Hasura</span>
+              <span class="chip">Docker</span>
+              <span class="chip">Kubernetes</span>
+              <span class="chip">AWS/GCP</span>
+              <span class="chip">GitHub Actions</span>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="cmd-head">$ <span>langs</span></div>
+            <p>Spanish (Native)<br />English (Conversational)</p>
+          </section>
+        </aside>
+
+        <main class="right">
+          <section class="section">
+            <div class="cmd-head">$ <span>experience --timeline</span></div>
+            <div class="timeline">
+              <article class="job">
+                <h3>Dex (YC S19) · Head of Engineering / Founding Engineer</h3>
+                <div class="when">2019 - Present</div>
+                <ul>
+                  <li>Rebuilt platform (Vue.js + Hasura), then led migration to Fastify + PostgreSQL with pub/sub workers.</li>
+                  <li>Implemented CI/CD in Turborepo monorepo with GitHub Actions, enabling multiple daily releases.</li>
+                  <li>Built the official MCP Server and AI Skill, plus payments and Gmail/Calendar/Outlook sync; launched Dex, Rolodex, and Lebra.</li>
+                  <li>Led hiring and team growth while supporting scale from $0 to $1M+ ARR.</li>
+                </ul>
+              </article>
+
+              <article class="job">
+                <h3>Rever · Senior Full-Stack Engineer</h3>
+                <div class="when">2017 - 2019</div>
+                <ul>
+                  <li>Joined early stage and helped scale engineering from 2 to 10 full-time engineers.</li>
+                  <li>Built product features across frontend and backend; founded and led Internal Tooling.</li>
+                  <li>Delivered Node.js/Python microservices with RabbitMQ, MongoDB, and PostgreSQL.</li>
+                </ul>
+              </article>
+
+              <article class="job">
+                <h3>Lesi · CTO & Founder</h3>
+                <div class="when">2015 - 2017</div>
+                <ul>
+                  <li>Founded company, hired engineering team, and shipped a house-rental platform.</li>
+                  <li>Led technical strategy, product execution, and fundraising support.</li>
+                </ul>
+              </article>
+            </div>
+          </section>
+
+          <section class="section split">
+            <div>
+              <div class="cmd-head">$ <span>prior_experience --summary</span></div>
+              <p>Kukumi (Founder), Kbyte (CEO), Basiko (Web Engineer), Organizala.com (Back-End Engineer), Universidad de Guadalajara (Web Engineer), and Pan American Games Guadalajara 2011 (IT Specialist).</p>
+            </div>
+            <div>
+              <div class="cmd-head">$ <span>education</span></div>
+              <p>Bachelor's Degree in Informatics, Universidad de Guadalajara</p>
+              <p>Technical Degree in Computer Equipment Maintenance and Digital Control, CONALEP Mexicano-Italiano</p>
+            </div>
+          </section>
+
+          <section class="section">
+            <div class="cmd-head">$ <span>projects --highlight</span></div>
+            <p>Author of the mini book <b>"Introduction to MEAN"</b> and instructor of HTML/CSS/JavaScript (2 courses x 6 months) at Instituto Tecnologico Superior de Zapopan.</p>
+          </section>
+
+          <div class="terminal-line"><b>></b> Available for senior full-stack and AI-enabled product engineering roles.</div>
+        </main>
+      </section>
+
+      <footer class="footer">
+        <span>build: cv_neon_terminal_v2</span>
+      </footer>
+    </article>
+  </body>
+</html>

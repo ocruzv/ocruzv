@@ -1,0 +1,77 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Javier Omar Cruz Vargas profile banner</title>
+  <desc id="desc">Neon terminal style banner for a GitHub profile.</desc>
+  <defs>
+    <linearGradient id="bg" x1="86" y1="24" x2="1112" y2="336" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#07111F"/>
+      <stop offset="1" stop-color="#050A15"/>
+    </linearGradient>
+    <linearGradient id="stroke" x1="86" y1="42" x2="1112" y2="318" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22D3EE"/>
+      <stop offset="0.5" stop-color="#3B82F6"/>
+      <stop offset="1" stop-color="#22C55E"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="720" y1="86" x2="1072" y2="286" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0D1930"/>
+      <stop offset="1" stop-color="#09101E"/>
+    </linearGradient>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" stroke="#1B2940" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="34" y="-8" width="1132" height="420" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="28" stdDeviation="22" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="360" fill="#050A15"/>
+  <rect width="1200" height="360" fill="url(#grid)"/>
+  <g opacity="0.35">
+    <circle cx="1010" cy="78" r="130" fill="#22D3EE"/>
+    <circle cx="1010" cy="78" r="130" fill="url(#bg)"/>
+  </g>
+  <g opacity="0.28">
+    <circle cx="165" cy="306" r="110" fill="#22C55E"/>
+    <circle cx="165" cy="306" r="110" fill="url(#bg)"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="72" y="32" width="1056" height="296" rx="22" fill="url(#bg)"/>
+    <rect x="72.75" y="32.75" width="1054.5" height="294.5" rx="21.25" stroke="url(#stroke)" stroke-opacity="0.55" stroke-width="1.5"/>
+    <rect x="72" y="32" width="1056" height="40" rx="22" fill="#0D1830"/>
+    <path d="M72 50C72 39.9548 80.9548 31 91 31H1109C1119.05 31 1128 39.9548 1128 50V72H72V50Z" fill="#0D1830"/>
+
+    <circle cx="104" cy="52" r="6" fill="#F87171"/>
+    <circle cx="126" cy="52" r="6" fill="#FBBF24"/>
+    <circle cx="148" cy="52" r="6" fill="#22C55E"/>
+
+    <text x="176" y="57" fill="#97A5C0" font-family="monospace" font-size="15">omar@github:~$ ./render --theme neon-terminal --profile public</text>
+
+    <text x="116" y="122" fill="#22D3EE" font-family="monospace" font-size="16">$ whoami</text>
+    <text x="116" y="164" fill="#F8FAFC" font-family="monospace" font-size="34" font-weight="700">Javier Omar Cruz Vargas</text>
+    <text x="116" y="196" fill="#9FB0CA" font-family="monospace" font-size="18">full-stack engineer // product builder // engineering leader</text>
+
+    <text x="116" y="238" fill="#22D3EE" font-family="monospace" font-size="16">$ current_focus</text>
+    <text x="116" y="266" fill="#E2E8F0" font-family="monospace" font-size="16">shipping AI-enabled software from 0-&gt;1 and from fragile-&gt;reliable</text>
+    <text x="116" y="292" fill="#AFC0D8" font-family="monospace" font-size="15">Dex (YC S19) / platform architecture / release systems / engineering leadership</text>
+
+    <rect x="718" y="94" width="332" height="156" rx="16" fill="url(#panel)"/>
+    <rect x="718.75" y="94.75" width="330.5" height="154.5" rx="15.25" stroke="#1F3351" stroke-width="1.5"/>
+
+    <text x="740" y="122" fill="#22C55E" font-family="monospace" font-size="15">$ boot.log</text>
+    <text x="740" y="150" fill="#DCE7F5" font-family="monospace" font-size="14">role      = head_of_engineering/founding_engineer</text>
+    <text x="740" y="174" fill="#DCE7F5" font-family="monospace" font-size="14">stack     = ts react vue node fastify postgres</text>
+    <text x="740" y="198" fill="#DCE7F5" font-family="monospace" font-size="14">tooling   = codex claude_code gemini_cli mcp</text>
+    <text x="740" y="222" fill="#DCE7F5" font-family="monospace" font-size="14">mode      = founder_dna + product_sense + rigor</text>
+
+    <rect x="718" y="266" width="332" height="34" rx="10" fill="#091221"/>
+    <text x="740" y="288" fill="#FBBF24" font-family="monospace" font-size="14">&gt; available for senior full-stack + AI product roles</text>
+
+    <rect x="116" y="102" width="92" height="22" rx="11" fill="#0D1A30"/>
+    <rect x="116.75" y="102.75" width="90.5" height="20.5" rx="10.25" stroke="#1C2B45" stroke-width="1.5"/>
+    <text x="131" y="117" fill="#C5F7FF" font-family="monospace" font-size="12">guadalajara.mx</text>
+
+    <rect x="222" y="102" width="112" height="22" rx="11" fill="#0D1A30"/>
+    <rect x="222.75" y="102.75" width="110.5" height="20.5" rx="10.25" stroke="#1C2B45" stroke-width="1.5"/>
+    <text x="239" y="117" fill="#D3FFE1" font-family="monospace" font-size="12">15+ yrs in prod</text>
+  </g>
+</svg>
