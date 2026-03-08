@@ -48,30 +48,30 @@
 
     <text x="116" y="122" fill="#22D3EE" font-family="monospace" font-size="16">$ whoami</text>
     <text x="116" y="164" fill="#F8FAFC" font-family="monospace" font-size="34" font-weight="700">Javier Omar Cruz Vargas</text>
-    <text x="116" y="196" fill="#9FB0CA" font-family="monospace" font-size="18">full-stack engineer // product builder // engineering leader</text>
+    <text x="116" y="196" fill="#9FB0CA" font-family="monospace" font-size="16">full-stack engineer // product builder // engineering leader</text>
 
     <text x="116" y="238" fill="#22D3EE" font-family="monospace" font-size="16">$ current_focus</text>
     <text x="116" y="266" fill="#E2E8F0" font-family="monospace" font-size="16">shipping AI-enabled software from 0-&gt;1 and from fragile-&gt;reliable</text>
-    <text x="116" y="292" fill="#AFC0D8" font-family="monospace" font-size="15">Dex (YC S19) / platform architecture / release systems / engineering leadership</text>
+    <text x="116" y="292" fill="#AFC0D8" font-family="monospace" font-size="14">Dex (YC S19) / platform / release systems / leadership</text>
 
-    <rect x="718" y="94" width="332" height="156" rx="16" fill="url(#panel)"/>
-    <rect x="718.75" y="94.75" width="330.5" height="154.5" rx="15.25" stroke="#1F3351" stroke-width="1.5"/>
+    <rect x="768" y="94" width="325" height="156" rx="16" fill="url(#panel)"/>
+    <rect x="768.75" y="94.75" width="323.5" height="154.5" rx="15.25" stroke="#1F3351" stroke-width="1.5"/>
 
-    <text x="740" y="122" fill="#22C55E" font-family="monospace" font-size="15">$ boot.log</text>
-    <text x="740" y="150" fill="#DCE7F5" font-family="monospace" font-size="14">role      = head_of_engineering/founding_engineer</text>
-    <text x="740" y="174" fill="#DCE7F5" font-family="monospace" font-size="14">stack     = ts react vue node fastify postgres</text>
-    <text x="740" y="198" fill="#DCE7F5" font-family="monospace" font-size="14">tooling   = codex claude_code gemini_cli mcp</text>
-    <text x="740" y="222" fill="#DCE7F5" font-family="monospace" font-size="14">mode      = founder_dna + product_sense + rigor</text>
+    <text x="790" y="122" fill="#22C55E" font-family="monospace" font-size="15">$ boot.log</text>
+    <text x="790" y="150" fill="#DCE7F5" font-family="monospace" font-size="13">role  = eng lead / founding eng</text>
+    <text x="790" y="174" fill="#DCE7F5" font-family="monospace" font-size="13">stack = ts react vue fastify pg</text>
+    <text x="790" y="198" fill="#DCE7F5" font-family="monospace" font-size="13">tools = codex claude gemini mcp</text>
+    <text x="790" y="222" fill="#DCE7F5" font-family="monospace" font-size="13">mode  = founder + product + rigor</text>
 
-    <rect x="718" y="266" width="332" height="34" rx="10" fill="#091221"/>
-    <text x="740" y="288" fill="#FBBF24" font-family="monospace" font-size="14">&gt; available for senior full-stack + AI product roles</text>
+    <rect x="768" y="266" width="325" height="34" rx="10" fill="#091221"/>
+    <text x="786" y="288" fill="#FBBF24" font-family="monospace" font-size="13">&gt; open to senior full-stack + AI roles</text>
 
-    <rect x="116" y="102" width="92" height="22" rx="11" fill="#0D1A30"/>
-    <rect x="116.75" y="102.75" width="90.5" height="20.5" rx="10.25" stroke="#1C2B45" stroke-width="1.5"/>
+    <rect x="116" y="102" width="130" height="22" rx="11" fill="#0D1A30"/>
+    <rect x="116.75" y="102.75" width="128.5" height="20.5" rx="10.25" stroke="#1C2B45" stroke-width="1.5"/>
     <text x="131" y="117" fill="#C5F7FF" font-family="monospace" font-size="12">guadalajara.mx</text>
 
-    <rect x="222" y="102" width="112" height="22" rx="11" fill="#0D1A30"/>
-    <rect x="222.75" y="102.75" width="110.5" height="20.5" rx="10.25" stroke="#1C2B45" stroke-width="1.5"/>
-    <text x="239" y="117" fill="#D3FFE1" font-family="monospace" font-size="12">15+ yrs in prod</text>
+    <rect x="252" y="102" width="138" height="22" rx="11" fill="#0D1A30"/>
+    <rect x="252.75" y="102.75" width="136.5" height="20.5" rx="10.25" stroke="#1C2B45" stroke-width="1.5"/>
+    <text x="269" y="117" fill="#D3FFE1" font-family="monospace" font-size="12">15+ yrs in prod</text>
   </g>
 </svg>
